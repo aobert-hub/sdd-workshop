@@ -1,1 +1,14 @@
 when	who	what	why	evidence
+2026-11-06T10:34	group 1	1. Payment methods: card and cash	not given	DOMAIN.md decision 1
+2026-11-06T10:35	group 1	2. VAT on screen: prices with VAT included	not given	DOMAIN.md decision 2
+2026-11-06T10:36	group 1	3. Returns without receipt: not allowed, returns only with receipt	not given	DOMAIN.md decision 3
+2026-11-06T10:40	group 1	VAT rate is defined on each product	not given	openspec/changes/shop-checkout/specs/basket/spec.md
+2026-11-06T10:41	group 1	Sticker is a percentage on one product	not given	openspec/changes/shop-checkout/specs/basket/spec.md
+2026-11-06T10:43	group 1	Refund goes back by the payment method of the original sale; closing shows card refunded and cash refunded	not given	openspec/changes/shop-checkout/specs/returns/spec.md
+2026-11-06T10:50	group 1	Backlog of 9 tickets signed off as ready	not given	tickets/backlog-ready.md
+2026-11-06T10:52	group 1	Agent time limit: 3 minutes	not given	ticket 000 ACCEPTANCE
+2026-11-06T10:56	group 1	Folder the agent may touch: app only	not given	ticket 000 ACCEPTANCE
+2026-11-06T10:57	group 1	Agent that ends without a report is red	not given	ticket 000 ACCEPTANCE
+2026-11-06T11:37	group 1	Rounds before a person decides: 2	not given	path.jsonl rounds
+2026-11-06T11:38	group 1	Reviewer may block: tests, lint and design (the rules of DOMAIN.md)	not given	reviewer skill
+2026-11-06T11:40	group 1	Who merges the pull request: a person	not given	path step 5
