@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sticker discount</title>
+</head>
+<body>
+  <script src="check.js"></script>
+  <script src="../checkout.js"></script>
+  <script>
+    var shirt = newBasket();
+    shirt.add(50.00, 30);
+    check("a shirt at 50.00 with a 30 % sticker gives a line of 35.00", shirt.lines()[0], "35.00");
+    check("a shirt at 50.00 with a 30 % sticker gives a basket total of 35.00", shirt.total(), "35.00");
+
+    var plain = newBasket();
+    plain.add(20.00);
+    check("a product at 20.00 with no sticker gives a line of 20.00", plain.lines()[0], "20.00");
+  </script>
+</body>
+</html>
