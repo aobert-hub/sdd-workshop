@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Basket total</title>
+</head>
+<body>
+  <script src="check.js"></script>
+  <script src="../checkout.js"></script>
+  <script>
+    var basket = newBasket();
+    basket.add(20.00);
+    basket.add(35.50);
+    check("two products at 20.00 and 35.50 give a basket total of 55.50", basket.total(), "55.50");
+    check("an empty basket total reads 0.00", newBasket().total(), "0.00");
+  </script>
+</body>
+</html>
