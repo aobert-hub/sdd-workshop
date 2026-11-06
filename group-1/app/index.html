@@ -9,9 +9,12 @@
   <h1>Shop checkout</h1>
   <form id="add-form">
     <label>Price (EUR) <input id="price" type="number" step="0.01" min="0"></label>
+    <label>VAT rate (%) <input id="vat-rate" type="number" step="0.1" min="0" value="20"></label>
     <button type="submit">Add product</button>
   </form>
   <p>Basket total: <span id="total">0.00</span> EUR</p>
+  <p>VAT total: <span id="vat-total">0.00</span> EUR</p>
+  <p>Total without VAT: <span id="total-without-vat">0.00</span> EUR</p>
   <script src="checkout.js"></script>
   <script>
     var basket = newBasket();
@@ -19,8 +22,10 @@
       event.preventDefault();
       var input = document.getElementById("price");
       if (input.value === "") { return; }
-      basket.add(Number(input.value));
+      basket.add(Number(input.value), Number(document.getElementById("vat-rate").value));
       document.getElementById("total").textContent = basket.total();
+      document.getElementById("vat-total").textContent = basket.vatTotal();
+      document.getElementById("total-without-vat").textContent = basket.totalWithoutVat();
       input.value = "";
     });
   </script>

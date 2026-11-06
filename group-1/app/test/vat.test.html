@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>VAT total</title>
+</head>
+<body>
+  <script src="check.js"></script>
+  <script src="../checkout.js"></script>
+  <script>
+    var discounted = newBasket();
+    discounted.add(35.00, 20);
+    check("a line of 35.00 at 20 % gives a VAT total of 5.83", discounted.vatTotal(), "5.83");
+    check("a line of 35.00 at 20 % gives 29.17 without VAT", discounted.totalWithoutVat(), "29.17");
+
+    var mixed = newBasket();
+    mixed.add(20.00, 20);
+    mixed.add(11.00, 10);
+    check("lines of 20.00 at 20 % and 11.00 at 10 % give a VAT total of 4.33", mixed.vatTotal(), "4.33");
+  </script>
+</body>
+</html>
