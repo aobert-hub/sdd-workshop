@@ -50,7 +50,7 @@ simpler, but some customers only carry cash.
 What we know: Card is 78 % of sales, but the market shop takes almost a third in cash on
 Saturdays.
 
-**Decision:** _pending_
+**Decision:** Card and cash. reason: not given
 
 ### 2. VAT on screen
 
@@ -60,7 +60,7 @@ shelf; separate is what the accountant wants.
 What we know: The law asks for the final price on the shelf; Élodie needs the VAT total of
 each sale.
 
-**Decision:** _pending_
+**Decision:** VAT included. reason: not given
 
 ### 3. Returns without the receipt
 
@@ -70,4 +70,4 @@ never bought here.
 What we know: 1 return in 5 has no receipt, and two of those last year were for clothes
 bought elsewhere.
 
-**Decision:** _pending_
+**Decision:** Returns only with the receipt. reason: not given

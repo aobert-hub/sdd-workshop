@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>sticker</title>
+</head>
+<body>
+  <script src="check.js"></script>
+  <script src="../checkout.js"></script>
+  <script>
+    var shirt = Checkout.line({ name: "shirt", price: 50.00, sticker: 30 });
+    check("a shirt at 50.00 with a 30 % sticker gives a line of 35.00 and a total of 35.00",
+      [shirt, Checkout.total([shirt])], [35.00, 35.00]);
+
+    var plain = Checkout.line({ name: "mug", price: 20.00 });
+    check("a product at 20.00 with no sticker gives a line of 20.00", plain, 20.00);
+  </script>
+</body>
+</html>
